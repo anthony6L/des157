@@ -1,0 +1,33 @@
+body{
+	list-style-position: inside;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-weight: 100;
+}
+
+h2{
+	font-size: 25pt;
+	text-align: center;
+	font-weight: 100;
+}
+
+#gender, #sexuality{
+	border-right:solid;
+	border-width: 1px;
+}
+
+.nest-list{
+	list-style: none;
+}
+
+.col1{
+	width:33%;
+}
+.col2{
+	width:100%;
+}
+.col{
+	float:left;
+}
+.row{
+	clear:both;
+}
