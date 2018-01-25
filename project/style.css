@@ -10,7 +10,11 @@ h2{
 	font-weight: 100;
 }
 
-#gender, #sexuality{
+a{
+	color: black;
+}
+
+#brit, #gender, #sexuality{
 	border-right:solid;
 	border-width: 1px;
 }
@@ -25,8 +29,14 @@ h2{
 .col2{
 	width:100%;
 }
+.col3{
+	width:49%;
+}
 .col{
 	float:left;
+}
+.colr{
+	float:right;
 }
 .row{
 	clear:both;
