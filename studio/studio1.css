@@ -1,0 +1,93 @@
+body {
+  height: 1000px;
+  font-family: fantasy;
+  font-size: 100%;
+  background: radial-gradient(#ffd989, #ffd989, #d69200);
+  ;
+}
+
+h1 {
+  position: relative;
+  font-size: 4em;
+  font-weight: 100;
+  color: white;
+  left: 48px;
+  line-height: 120px;
+}
+
+header {
+  position: relative;
+  width: 80%;
+  top: 24px;
+  background-color: #632e00;
+  padding: 0 20px 0 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+article {
+  position: relative;
+  width: 80%;
+  background: radial-gradient(#D27004, #8e4200);
+  top: -20px;
+  padding: 20px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+div {
+  margin: 2%;
+}
+
+label {
+  font-size: 1.5em;
+  width: 10em;
+  text-align: right;
+  display: inline-block;
+  padding-right: 3%;
+}
+
+input {
+  width: 30%;
+  font-family: fantasy;
+  padding: 1%;
+  border-radius: 8px;
+  border: 3px #632e00 solid;
+  font-size: 1.5em;
+  background-color: #d69200;
+}
+
+input[type="text"] {
+  border: none;
+  border-bottom: 3px #632e00 solid;
+  min-width: 300px;
+  color:white;
+}
+
+select{
+  width: 30%; 
+  border-radius: 4px;
+  border:none;
+  border-bottom: 2px #632e00 solid;
+  font-family: fantasy;
+  font-size: 1em;
+  background-color: #d69200;
+}
+
+section p{
+  width: 80%;
+  background: radial-gradient(#D27004, #8e4200);
+  padding: 20px;
+  border-radius: 11px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 28px;
+}
+
+.hide{
+  display:none;
+}
+
+.show{
+  display:block;
+}
