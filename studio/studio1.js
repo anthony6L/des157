@@ -1,8 +1,5 @@
 
 var results = document.getElementById("results");
-var userName = document.f.userName.value;
-var town = document.f.town.value;
-var skill = document.f.skill.value;
 var myMsg=document.getElementById("myMsg");
 
 document.f.onsubmit = processForm;
@@ -10,7 +7,9 @@ document.f.onreset = resetForm;
 
 function processForm(){
 	results.className = "show";
-	console.log("here");
+	var userName = document.f.userName.value;
+	var town = document.f.town.value;
+	var skill = document.f.skill.value;
 
 	myMsg.innerHTML="Hello " + userName + " of " + town +
 					", Welcome to the Clade! You've been assigned to be a " + 
