@@ -14,6 +14,8 @@ function processForm(){
 	myMsg.innerHTML="Hello " + userName + " of " + town +
 					", Welcome to the Clade! You've been assigned to be a " + 
 					skill + ". Hope you will get used to the new community soon.";
+	
+	document.body.style.backgroundImage = "url('images/st1-vil.jpg')";
 
      //prevent page from reloading
     return false;
