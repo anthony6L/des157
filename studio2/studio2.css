@@ -1,0 +1,25 @@
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  animation: fadein 2s;
+}
+
+#bag img {
+  max-width: 100%;
+  position: absolute;
+}
+
+#laidOut {
+  opacity: 0;
+}
+
+.fadeInClass {
+  animation: fadein 1s;
+}
