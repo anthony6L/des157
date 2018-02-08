@@ -14,7 +14,24 @@ a{
 	color: black;
 }
 
-#brit, #gender, #sexuality{
+a:hover{
+	color: darkgrey;
+}
+
+p{
+	text-indent:40px;
+}
+
+#bib{
+	list-style: none;
+	text-indent:-40px;
+}
+
+#projImplicit{
+	display: inline;
+}
+
+.borderR{
 	border-right:solid;
 	border-width: 1px;
 }
@@ -31,6 +48,9 @@ a{
 }
 .col3{
 	width:49%;
+}
+.col4{
+	width:65%;
 }
 .col{
 	float:left;
