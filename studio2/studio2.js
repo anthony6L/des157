@@ -6,8 +6,14 @@ var text = document.getElementById('textOnImg');
 var bag = document.getElementById('bag');
 
 text.addEventListener('click', function() {
+  if(laidOut.classList.contains("fadeOutClass")){
+	laidOut.classList.remove("fadeOutClass");
+  }
   laidOut.classList.add("fadeInClass");
   laidOut.style.opacity = 1;
+  if(text.classList.contains("fadeInClass")){
+	text.classList.remove("fadeInClass");
+  }
   text.classList.add("fadeOutClass");
   text.style.opacity = 0;
 });
