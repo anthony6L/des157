@@ -49,17 +49,19 @@ micron.addEventListener('click', function() {
 		mPic.style.display = "block";}
 });
 
-/*micron.addEventListener('touchstart', function()) {
+micron.addEventListener('touchstart', function(e) {
 	mPic.style.display = "block";
-});*/
+	e.preventDefault();
+},false);
 
 mPic.addEventListener('click', function() {
 	mPic.style.display = "none";
 });
 
-/*mPic.addEventListener('touchend', function() {
+mPic.addEventListener('touchend', function(e) {
 	mPic.style.display = "none";
-});*/
+	e.preventDefault();
+},false);
 
 
 //sakura
