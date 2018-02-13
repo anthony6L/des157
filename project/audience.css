@@ -1,0 +1,102 @@
+body{
+	list-style-position: inside;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-weight: 100;
+	background-color: rgb(30,30,30);
+}
+
+h1{
+	font-size: 30pt;
+	text-align: center;
+}
+
+h2{
+	float:left;
+	clear:both;
+	width:45%;
+	text-align: left;
+	font-size: 25pt;
+	text-align: center;
+	font-weight: 100;
+}
+
+a{
+	color: white;
+}
+
+a:hover{
+	color: darkgrey;
+}
+
+p{
+	text-indent:40px;
+}
+
+header{
+	width:85%;
+	height: 10%;
+	background: rgb(80, 80, 80); 
+	color:#f1f1f1;
+	position:relative;
+	display: block;
+	margin:auto;
+	padding:1px 20px 0 20px;
+}
+
+#audience, #audSpecific{
+	width:75%;
+	background: rgb(130, 130, 130); 
+	color:#f1f1f1;
+	position:relative;
+	display: block;
+	margin:auto;
+	padding:20px;
+}
+
+#audience{
+	padding:20px 20px 0 20px;
+}
+
+#audience img{
+	max-width:50%;
+	margin-left: 10px;
+}
+
+#audience h3 {
+	float:left;
+	clear:both;
+	margin-top: -10px;
+	font-size: 20pt;
+	font-weight:100;
+	text-align: left;
+	width:45%;
+}
+
+#audience ul{
+	float:left;
+	clear:both;
+	width:45%;
+	list-style-position: outside;
+	margin-left: -25px;
+}
+
+#audience li{
+	margin-bottom: 15px;
+}
+
+#audSpecific h3 {
+	font-size: 20pt;
+	font-weight: 100;
+	line-height: 10pt;
+	text-align: center;
+}
+
+#audSpecific ul{
+	margin: 0 0 50px 40px;
+	list-style: none;
+	text-indent: -60px;
+}
+
+#audSpecific li{
+	margin-bottom: 15px;
+}
