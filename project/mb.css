@@ -1,0 +1,25 @@
+body {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight: 100;
+  text-align: center;
+}
+
+#mb1, #mb1-5, #mb2-1 {
+  float: left;
+  width: 49.5%;
+}
+
+#mb1-1, #mb2-3 {
+  max-width: 100%;
+}
+
+#mb1-2, #mb1-4 {
+  float: left;
+  max-width: 49.5%;
+  padding-bottom: 3px;
+}
+
+#mb1-3, #mb2, #mb2-2 {
+  float: right;
+  max-width: 50%;
+}
