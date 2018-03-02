@@ -60,7 +60,8 @@ a {
   left: 0px;
   right: 0px;
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(0, 0, 0, 0.75);
+  /*color: rgba(255, 255, 255, 0.75);*/
 }
 
 button {
@@ -81,8 +82,8 @@ button:active {
   background-color: rgba(0, 255, 255, 0.75);
 }
 
-#messege {
-  padding:100px;
+#message {
+  padding: 100px;
   width: 1500px;
   height: 200px;
   font-size: 150pt;
@@ -93,7 +94,7 @@ button:active {
 }
 
 .detail {
-  padding:100px;
+  padding: 100px;
   width: 1500px;
   height: 200px;
   font-size: 25pt;
