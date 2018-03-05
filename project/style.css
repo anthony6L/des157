@@ -22,6 +22,10 @@ p{
 	text-indent:40px;
 }
 
+img{
+	max-width: 100%;
+}
+
 #bib{
 	list-style: none;
 	text-indent:-40px;
