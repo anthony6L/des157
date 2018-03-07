@@ -53,7 +53,39 @@ var gender = [
 ];
 
 var other = [
-
+	"Iron", "studio3.html",
+  "Cobalt", "studio3.html",
+  "Nickel", "studio3.html",
+  "Copper", "studio3.html",
+  "Zinc", "studio3.html",
+  "Gallium", "studio3.html",
+  "Germanium", "studio3.html",
+  "Arsenic", "studio3.html",
+  "Selenium", "studio3.html",
+  "Bromine", "studio3.html",
+  "Krypton", "studio3.html",
+  "Rubidium", "studio3.html",
+  "Strontium", "studio3.html",
+  "Yttrium", "studio3.html",
+  "Zirconium", "studio3.html",
+  "Niobium", "studio3.html",
+  "Molybdenum", "studio3.html",
+  "Technetium", "studio3.html",
+  "Ruthenium", "studio3.html",
+  "Rhodium", "studio3.html",
+  "Palladium", "studio3.html",
+  "Silver", "studio3.html",
+  "Cadmium", "studio3.html",
+  "Indium", "studio3.html",
+  "Tin", "studio3.html",
+  "Antimony", "studio3.html",
+  "Tellurium", "studio3.html",
+  "Iodine", "studio3.html",
+  "Xenon", "studio3.html",
+  "Caesium", "studio3.html",
+  "Barium", "studio3.html",
+  "Lanthanum", "studio3.html",
+  "Cerium", "studio3.html"
 ]
 
 var resourceList = [
@@ -177,7 +209,7 @@ function init() {
     element.className = 'element';
     var hue = randomColor({
       luminosity: 'bright',
-      hue: 'blue',
+      hue: 'yellow',
       format: 'rgba',
       alpha: (Math.random() * 0.5 + 0.25)
     });
@@ -308,6 +340,36 @@ function init() {
   controls.maxDistance = 6000;
   controls.addEventListener('change', render);
 
+	var instr = document.getElementById('instructions');
+	//filter buttons
+	var filter = document.getElementById('filter');
+	var sex = document.getElementById('red');
+	var gen = document.getElementById('blue');
+	var terms = document.getElementById('yellow');
+		
+	sex.addEventListener('click', function(event) {
+			for (var i = objects.length-1; i >= sexuality.length/2; i--) {
+      	scene.remove(objects[i]);
+    	}
+	}, false);
+	
+	gen.addEventListener('click', function(event) {
+			for (var i = 0; i < sexuality.length/2; i++) {
+      	scene.remove(objects[i]);
+    	}
+			
+			for (var i = objects.length-1; i > sexuality.length/2 + gender.length/2 - 2; i--){
+					scene.remove(objects[i]);
+			}
+	}, false);
+		
+	terms.addEventListener('click', function(event) {
+			for (var i = objects.length-1; i >= sexuality.length/2; i--) {
+      	scene.remove(objects[i]);
+    	}
+	}, false);
+	
+	//instruction button
   var button = document.getElementById('instruction');
   button.addEventListener('click', function(event) {
     for (var i = 0; i < resourceObj.length; i++) {
@@ -318,12 +380,22 @@ function init() {
       scene.remove(objects[i]);
     }
     controls.reset();
+		
+		if(instr.classList.contains("hide")){
+			instr.classList.remove("hide");
+			instr.classList.add("show");
+  	}
+		if(filter.classList.contains("show")){
+			filter.classList.remove("show");
+			filter.classList.add("hide");
+  	}
 
   }, false);
 
+	//labels button
   var button = document.getElementById('sphere');
   button.addEventListener('click', function(event) {
-
+		
     for (var i = 0; i < objects.length; i++) {
       scene.add(objects[i]);
     }
@@ -333,8 +405,18 @@ function init() {
       scene.remove(resourceObj[i]);
     }
     controls.reset();
+			
+		if(instr.classList.contains("show")){
+			instr.classList.remove("show");
+			instr.classList.add("hide");
+  	}
+		if(filter.classList.contains("hide")){
+			filter.classList.remove("hide");
+			filter.classList.add("show");
+  	}
   }, false);
-
+		
+	//message button
   var button = document.getElementById('messagePage');
   button.addEventListener('click', function(event) {
     for (var i = 0; i < objects.length; i++) {
@@ -347,9 +429,19 @@ function init() {
       scene.remove(resourceObj[i]);
     }
     controls.reset();
-
+		
+		if(instr.classList.contains("show")){
+			instr.classList.remove("show");
+			instr.classList.add("hide");
+  	}
+		
+		if(filter.classList.contains("hide")){
+			filter.classList.remove("hide");
+			filter.classList.add("show");
+  	}
   }, false);
 
+	//resource button
   var button = document.getElementById('resources');
   button.addEventListener('click', function(event) {
     for (var i = 0; i < resourceObj.length; i++) {
@@ -360,12 +452,20 @@ function init() {
       scene.remove(objects[i]);
     }
     controls.reset();
+			
+		if(instr.classList.contains("show")){
+			instr.classList.remove("show");
+			instr.classList.add("hide");
+  	}
+		
+		if(filter.classList.contains("show")){
+			filter.classList.remove("show");
+			filter.classList.add("hide");
+  	}
+			
     transform(targets.resources, 2000, resourceObj);
 
   }, false);
-
-
-  //transform(targets.sphere, 2000, objects);
 
 
   //
