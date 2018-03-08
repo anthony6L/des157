@@ -97,10 +97,10 @@ a:hover {
 }
 
 #message {
-  padding: 100px;
+  padding: 50px 100px 75px 100px;
   width: 1500px;
-  height: 200px;
-  font-size: 150pt;
+  height: 350px;
+  font-size: 125pt;
   color: #ffffff;
   text-align: center;
   cursor: default;
@@ -125,9 +125,9 @@ button:active {
 }
 
 .hide {
-		display:none;
+  display: none;
 }
 
 .show {
-		display:block;
+  display: block;
 }

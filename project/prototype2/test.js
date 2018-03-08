@@ -53,7 +53,7 @@ var gender = [
 ];
 
 var other = [
-	"Iron", "studio3.html",
+  "Iron", "studio3.html",
   "Cobalt", "studio3.html",
   "Nickel", "studio3.html",
   "Copper", "studio3.html",
@@ -307,8 +307,8 @@ function init() {
   }
   var message = document.createElement('div');
   message.id = 'message';
-  message.style.backgroundColor = 'rgba(255,255,255,0.25)';
-  message.textContent = "this is studio3";
+  message.style.backgroundColor = 'rgba(255,255,255,0.40)';
+  message.textContent = "You are more than the labels";
 
   var mesObject = new THREE.CSS3DObject(message);
 
@@ -322,11 +322,9 @@ function init() {
     object.position.z = (Math.floor(i / 25)) * 1000 - 2000;
 
     targets.resources.push(object);
-
   }
 
   //
-
   renderer = new THREE.CSS3DRenderer();
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.domElement.style.position = 'absolute';
@@ -340,36 +338,36 @@ function init() {
   controls.maxDistance = 6000;
   controls.addEventListener('change', render);
 
-	var instr = document.getElementById('instructions');
-	//filter buttons
-	var filter = document.getElementById('filter');
-	var sex = document.getElementById('red');
-	var gen = document.getElementById('blue');
-	var terms = document.getElementById('yellow');
-		
-	sex.addEventListener('click', function(event) {
-			for (var i = objects.length-1; i >= sexuality.length/2; i--) {
-      	scene.remove(objects[i]);
-    	}
-	}, false);
-	
-	gen.addEventListener('click', function(event) {
-			for (var i = 0; i < sexuality.length/2; i++) {
-      	scene.remove(objects[i]);
-    	}
-			
-			for (var i = objects.length-1; i > sexuality.length/2 + gender.length/2 - 2; i--){
-					scene.remove(objects[i]);
-			}
-	}, false);
-		
-	terms.addEventListener('click', function(event) {
-			for (var i = objects.length-1; i >= sexuality.length/2; i--) {
-      	scene.remove(objects[i]);
-    	}
-	}, false);
-	
-	//instruction button
+  var instr = document.getElementById('instructions');
+  //filter buttons
+  var filter = document.getElementById('filter');
+  var sex = document.getElementById('red');
+  var gen = document.getElementById('blue');
+  var terms = document.getElementById('yellow');
+
+  sex.addEventListener('click', function(event) {
+    for (var i = objects.length - 1; i >= sexuality.length / 2; i--) {
+      scene.remove(objects[i]);
+    }
+  }, false);
+
+  gen.addEventListener('click', function(event) {
+    for (var i = 0; i < sexuality.length / 2; i++) {
+      scene.remove(objects[i]);
+    }
+
+    for (var i = objects.length - 1; i > sexuality.length / 2 + gender.length / 2 - 2; i--) {
+      scene.remove(objects[i]);
+    }
+  }, false);
+
+  terms.addEventListener('click', function(event) {
+    for (var i = 0; i < objects.length - other.length / 2; i++) {
+      scene.remove(objects[i]);
+    }
+  }, false);
+
+  //instruction button
   var button = document.getElementById('instruction');
   button.addEventListener('click', function(event) {
     for (var i = 0; i < resourceObj.length; i++) {
@@ -380,22 +378,22 @@ function init() {
       scene.remove(objects[i]);
     }
     controls.reset();
-		
-		if(instr.classList.contains("hide")){
-			instr.classList.remove("hide");
-			instr.classList.add("show");
-  	}
-		if(filter.classList.contains("show")){
-			filter.classList.remove("show");
-			filter.classList.add("hide");
-  	}
+
+    if (instr.classList.contains("hide")) {
+      instr.classList.remove("hide");
+      instr.classList.add("show");
+    }
+    if (filter.classList.contains("show")) {
+      filter.classList.remove("show");
+      filter.classList.add("hide");
+    }
 
   }, false);
 
-	//labels button
+  //labels button
   var button = document.getElementById('sphere');
   button.addEventListener('click', function(event) {
-		
+
     for (var i = 0; i < objects.length; i++) {
       scene.add(objects[i]);
     }
@@ -405,18 +403,18 @@ function init() {
       scene.remove(resourceObj[i]);
     }
     controls.reset();
-			
-		if(instr.classList.contains("show")){
-			instr.classList.remove("show");
-			instr.classList.add("hide");
-  	}
-		if(filter.classList.contains("hide")){
-			filter.classList.remove("hide");
-			filter.classList.add("show");
-  	}
+
+    if (instr.classList.contains("show")) {
+      instr.classList.remove("show");
+      instr.classList.add("hide");
+    }
+    if (filter.classList.contains("hide")) {
+      filter.classList.remove("hide");
+      filter.classList.add("show");
+    }
   }, false);
-		
-	//message button
+
+  //message button
   var button = document.getElementById('messagePage');
   button.addEventListener('click', function(event) {
     for (var i = 0; i < objects.length; i++) {
@@ -429,19 +427,19 @@ function init() {
       scene.remove(resourceObj[i]);
     }
     controls.reset();
-		
-		if(instr.classList.contains("show")){
-			instr.classList.remove("show");
-			instr.classList.add("hide");
-  	}
-		
-		if(filter.classList.contains("hide")){
-			filter.classList.remove("hide");
-			filter.classList.add("show");
-  	}
+
+    if (instr.classList.contains("show")) {
+      instr.classList.remove("show");
+      instr.classList.add("hide");
+    }
+
+    if (filter.classList.contains("hide")) {
+      filter.classList.remove("hide");
+      filter.classList.add("show");
+    }
   }, false);
 
-	//resource button
+  //resource button
   var button = document.getElementById('resources');
   button.addEventListener('click', function(event) {
     for (var i = 0; i < resourceObj.length; i++) {
@@ -452,17 +450,17 @@ function init() {
       scene.remove(objects[i]);
     }
     controls.reset();
-			
-		if(instr.classList.contains("show")){
-			instr.classList.remove("show");
-			instr.classList.add("hide");
-  	}
-		
-		if(filter.classList.contains("show")){
-			filter.classList.remove("show");
-			filter.classList.add("hide");
-  	}
-			
+
+    if (instr.classList.contains("show")) {
+      instr.classList.remove("show");
+      instr.classList.add("hide");
+    }
+
+    if (filter.classList.contains("show")) {
+      filter.classList.remove("show");
+      filter.classList.add("hide");
+    }
+
     transform(targets.resources, 2000, resourceObj);
 
   }, false);
