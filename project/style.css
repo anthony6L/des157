@@ -39,6 +39,10 @@ img{
 	border-right:solid;
 	border-width: 1px;
 }
+.borderL{
+	border-left:solid;
+	border-width: 1px;
+}
 
 .nest-list{
 	list-style: none;
