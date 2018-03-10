@@ -1,127 +1,108 @@
 var sexuality = [
-  "Androsexual", "studio3.html",
-  "Aromantic", "studio3.html",
-  "Asexual", "studio3.html",
-  "Bicurious", "studio3.html",
-  "Bisexual", "studio3.html",
-  "Demiromantic", "studio3.html",
-  "Demisexual", "studio3.html",
-  "Gay", "studio3.html",
-  "Gynesexual", "studio3.html",
-  "Heterosexual", "studio3.html",
-  "Lesbian", "studio3.html",
-  "Metrosexual", "studio3.html",
-  "Queer", "studio3.html",
-  "Skoliosexual", "studio3.html",
-  "Straight", "studio3.html"
+  "Androsexual", "labels/sex/androsexual.html",
+  "Aromantic", "labels/sex/aromantic.html",
+  "Asexual", "labels/sex/asexual.html",
+  "Bicurious", "labels/sex/bicurious.html",
+  "Bisexual", "labels/sex/bisexual.html",
+  "Demiromantic", "labels/sex/demiromantic.html",
+  "Demisexual", "labels/sex/demisexual.html",
+  "Emotional Attraction", "labels/sex/emotional-attraction.html",
+  "Gay", "labels/sex/gay.html",
+  "Gynesexual", "labels/sex/gynesexual.html",
+  "Heterosexual", "labels/sex/heterosexual.html",
+  "Lesbian", "labels/sex/lesbian.html",
+  "Metrosexual", "labels/sex/metrosexual.html",
+  "MSM/WSW", "labels/sex/msm.html",
+  "pansexual", "labels/sex/pansexual.html",
+  "Queer", "labels/sex/queer.html",
+  "Romantic Attraction", "labels/sex/romantic-attraction.html",
+  "Sexual Attraction", "labels/sex/sexual-attraction.html",
+  "Sexual Orientation", "labels/sex/sexual-orientation.html",
+  "Sexual Preference", "labels/sex/sexual-preference.html",
+  "Skoliosexual", "labels/sex/skoliosexual.html",
+  "Spiritual Attraction", "labels/sex/spiritual-attraction.html",
+  "Straight", "labels/sex/straight.html"
 ];
 
 var gender = [
-  "Iron", "studio3.html",
-  "Cobalt", "studio3.html",
-  "Nickel", "studio3.html",
-  "Copper", "studio3.html",
-  "Zinc", "studio3.html",
-  "Gallium", "studio3.html",
-  "Germanium", "studio3.html",
-  "Arsenic", "studio3.html",
-  "Selenium", "studio3.html",
-  "Bromine", "studio3.html",
-  "Krypton", "studio3.html",
-  "Rubidium", "studio3.html",
-  "Strontium", "studio3.html",
-  "Yttrium", "studio3.html",
-  "Zirconium", "studio3.html",
-  "Niobium", "studio3.html",
-  "Molybdenum", "studio3.html",
-  "Technetium", "studio3.html",
-  "Ruthenium", "studio3.html",
-  "Rhodium", "studio3.html",
-  "Palladium", "studio3.html",
-  "Silver", "studio3.html",
-  "Cadmium", "studio3.html",
-  "Indium", "studio3.html",
-  "Tin", "studio3.html",
-  "Antimony", "studio3.html",
-  "Tellurium", "studio3.html",
-  "Iodine", "studio3.html",
-  "Xenon", "studio3.html",
-  "Caesium", "studio3.html",
-  "Barium", "studio3.html",
-  "Lanthanum", "studio3.html",
-  "Cerium", "studio3.html"
+  "Agender", "labels/gen/agender.html",
+  "Androgyny/ous", "labels/gen/androgyny.html",
+  "Bigender", "labels/gen/bigender.html",
+  "Biological sex", "labels/gen/biological-sex.html",
+  "Butch", "labels/gen/butch.html",
+  "Cisgender", "labels/gen/cisgender.html",
+  "Dyke", "labels/gen/dyke.html",
+  "Femme", "labels/gen/femme.html",
+  "Fluid", "labels/gen/fluid.html",
+  "FtM/F2M", "labels/gen/ftm.html",
+  "Gender Non-conforming", "labels/gen/gnon-conforming.html",
+  "Gender Normative", "labels/gen/gender-normative.html",
+  "Genderqueer", "labels/gen/genderqueer.html",
+  "Gender Variant", "labels/gen/gender-variant.html",
+  "Hermaphrodite", "labels/gen/hermaphrodite.html",
+  "Intersex", "labels/gen/intersex.html",
+  "MtF/M2F", "labels/gen/mtf.html",
+  "Mx", "labels/gen/mx.html",
+  "Passing", "labels/passing.html",
+  "PGP", "labels/gen/pgp.html",
+  "SAAB", "labels/gen/saab.html",
+  "SRS", "labels/gen/srs.html",
+  "Stealth", "labels/gen/stealth.html",
+  "Third Gender", "labels/gen/3rd-gender.html",
+  "Top Surgery", "labels/gen/top-surgery.html",
+  "Trans*", "labels/gen/trans.html",
+  "Transgender", "labels/gen/transgender.html",
+  "Transition", "labels/gen/transition.html",
+  "Transman", "labels/gen/transman.html",
+  "Transwoman", "labels/gen/transwoman.html",
+  "Transsexual", "labels/gen/transsexual.html",
+  "Transvestite", "labels/gen/transvestite.html",
+  "Two-Spirit", "labels/gen/2-spirit.html",
+  "Ze/Zir", "labels/gen/ze.html"
 ];
 
 var other = [
-  "Iron", "studio3.html",
-  "Cobalt", "studio3.html",
-  "Nickel", "studio3.html",
-  "Copper", "studio3.html",
-  "Zinc", "studio3.html",
-  "Gallium", "studio3.html",
-  "Germanium", "studio3.html",
-  "Arsenic", "studio3.html",
-  "Selenium", "studio3.html",
-  "Bromine", "studio3.html",
-  "Krypton", "studio3.html",
-  "Rubidium", "studio3.html",
-  "Strontium", "studio3.html",
-  "Yttrium", "studio3.html",
-  "Zirconium", "studio3.html",
-  "Niobium", "studio3.html",
-  "Molybdenum", "studio3.html",
-  "Technetium", "studio3.html",
-  "Ruthenium", "studio3.html",
-  "Rhodium", "studio3.html",
-  "Palladium", "studio3.html",
-  "Silver", "studio3.html",
-  "Cadmium", "studio3.html",
-  "Indium", "studio3.html",
-  "Tin", "studio3.html",
-  "Antimony", "studio3.html",
-  "Tellurium", "studio3.html",
-  "Iodine", "studio3.html",
-  "Xenon", "studio3.html",
-  "Caesium", "studio3.html",
-  "Barium", "studio3.html",
-  "Lanthanum", "studio3.html",
-  "Cerium", "studio3.html"
-]
+  "Advocate", "labels/other/advocate.html",
+  "Ally", "labels/other/ally.html",
+  "Biphobia", "labels/other/biphobia.html",
+  "Cisnormativity", "labels/other/cisnormativity.html",
+  "Cissexism", "labels/other/cissexism.html",
+  "Closeted", "labels/other/closeted.html",
+  "Coming Out", "labels/other/coming-out.html",
+  "Cross-Dresser", "labels/other/cross-dresser.html",
+  "Drag King", "labels/other/drag-king.html",
+  "Drag Queen", "labels/other/drag-queen.html",
+  "Gender Binary", "labels/other/gender-binary.html",
+  "Gender Expression", "labels/other/gender-expression.html",
+  "Gender Identity", "labels/other/gender-identity.html",
+  "Heteronormativity", "labels/other/heteronormativity.html",
+  "Heterosexism", "labels/other/heterosexism.html",
+  "Homophobia", "labels/other/homophobia.html",
+  "LGBTQ/GSM/DSG", "labels/other/lgbt.html",
+  "Outing", "labels/other/outing.html",
+  "Questioning", "labels/other/questioning.html",
+  "QPOC/QTPOC", "labels/other/qpoc.html",
+  "Transphobia", "labels/other/transphobia.html"
+];
 
 var resourceList = [
-  "Iron", "studio3.html",
-  "Cobalt", "studio3.html",
-  "Nickel", "studio3.html",
-  "Copper", "studio3.html",
-  "Zinc", "studio3.html",
-  "Gallium", "studio3.html",
-  "Germanium", "studio3.html",
-  "Arsenic", "studio3.html",
-  "Selenium", "studio3.html",
-  "Bromine", "studio3.html",
-  "Krypton", "studio3.html",
-  "Rubidium", "studio3.html",
-  "Strontium", "studio3.html",
-  "Yttrium", "studio3.html",
-  "Zirconium", "studio3.html",
-  "Niobium", "studio3.html",
-  "Molybdenum", "studio3.html",
-  "Technetium", "studio3.html",
-  "Ruthenium", "studio3.html",
-  "Rhodium", "studio3.html",
-  "Palladium", "studio3.html",
-  "Silver", "studio3.html",
-  "Cadmium", "studio3.html",
-  "Indium", "studio3.html",
-  "Tin", "studio3.html",
-  "Antimony", "studio3.html",
-  "Tellurium", "studio3.html",
-  "Iodine", "studio3.html",
-  "Xenon", "studio3.html",
-  "Caesium", "studio3.html",
-  "Barium", "studio3.html",
-  "Lanthanum", "studio3.html",
-  "Cerium", "studio3.html"
+  "Atticus Circle", "https://www.atticuscircle.org/","Dedicated to educating and mobilizing straight allies to advance equal rights for lesbians, gay, bisexual and transgender partners, parents and their children.",
+  "Trans Family", "http://transfamily.org/", "TransFamily provides support, education, advocacy, and outreach for the transgendered community, families, friends, partners, and allies of all ages, through meetings, presentations, seminars, media outreach, and an emergency resource hotline.",
+  "GLBTNearMe", "https://glbtnearme.org/", "Find local social and support resources within the LGBT community.",
+  "Trevor Project", "https://www.thetrevorproject.org/", "Leading national organization focused on crisis and suicide prevention efforts for LGBTQ youth. They operate a 24 hour nationwide hotline to provide assistance.",
+  "The Ali Forney Center", "https://www.aliforneycenter.org/", "Providing shelter, food, and resources for at risk or homeless LGBT youth.",
+  "GLBT National Help Center", "http://www.glbtnationalhelpcenter.org/", "Provides free and confidential telephone and internet counseling, information and local resources for LGBTQ callers.",
+  "National Youth Advocacy Coalition", "http://nyacyouth.org/", "A national organization seeking to strenghten the role of LGBTQ youth in the broader gay rights movement.",
+  "LGBT Campus", "http://www.lgbtcampus.org/", "Provides resources to lesbian, gay, bisexual, and transgender students, faculty, staff, administrators, and alumni.",
+  "GSA Network", "https://gsanetwork.org/", "Gay-Straight Alliance Network is a youth leadership organization that connects school-based Gay-Straight Alliances (GSAs) to each other and community resources through peer support, leadership development, and training.",
+  "Campus Pride", "http://campuspride.org/", "The only national organization working to empower LGBT college students and organizers.",
+  "Campus Climate Index", "https://www.campusprideindex.org/", "An index ranking LGBT life on various college campuses.",
+  "NCAVP", "https://avp.org/ncavp/", "A national coalition of local member programs working to prevent, respond to, and end all forms of violence against and within LGBTQ communities.",
+  "GLSEN", "https://www.glsen.org/", "Lesson plans, curricular tools, and information on teacher training programs.",
+  "Safe Schools Coalition", "http://safeschoolscoalition.org/studio3.html", "An international public-private partnership in support of gay, lesbian, bisexual and transgender youth, working to help schools become safe places where every family can belong, every educator can teach, and every child can learn, regardless of gender identity or sexual orientation.",
+  "Beyound Ex-Gay", "https://beyondexgay.com/", "Community of survivors of “ex-gay” conversion therapy.",
+  "Psychology Today", "https://www.psychologytoday.com/", "Trustworthy resource to find therapist and psychiatrist",
+  "The Human Rights Campaign", "http://www.hrc.org/", "The leading LGBT civil rights organization, with information about LGBT people/issues and ways to get involved in the fight for equality.",
 ];
 
 var camera, scene, renderer;
@@ -162,7 +143,7 @@ function init() {
 
     var symbol = document.createElement('div');
     symbol.className = 'symbol';
-    symbol.innerHTML = "<a href=" + sexuality[i + 1] + ">" + sexuality[i] + "</a>";
+    symbol.innerHTML = "<a href=" + sexuality[i + 1] + " target=\"_blank\">" + sexuality[i] + "</a>";
     element.appendChild(symbol);
 
     var object = new THREE.CSS3DObject(element);
@@ -190,7 +171,7 @@ function init() {
 
     var symbol = document.createElement('div');
     symbol.className = 'symbol';
-    symbol.innerHTML = "<a href=" + gender[i + 1] + ">" + gender[i] + "</a>";
+    symbol.innerHTML = "<a href=" + gender[i + 1] + " target=\"_blank\">" + gender[i] + "</a>";
     element.appendChild(symbol);
 
     var object = new THREE.CSS3DObject(element);
@@ -218,7 +199,7 @@ function init() {
 
     var symbol = document.createElement('div');
     symbol.className = 'symbol';
-    symbol.innerHTML = "<a href=" + other[i + 1] + ">" + other[i] + "</a>";
+    symbol.innerHTML = "<a href=" + other[i + 1] + " target=\"_blank\">" + other[i] + "</a>";
     element.appendChild(symbol);
 
     var object = new THREE.CSS3DObject(element);
@@ -231,22 +212,23 @@ function init() {
 
   }
 
-  for (var i = 0; i < resourceList.length; i += 2) {
+  for (var i = 0; i < resourceList.length; i += 3) {
 
     var element = document.createElement('div');
-    element.className = 'element';
+    element.className = 'resource';
     var hue = randomColor({
-      luminosity: 'bright',
+      luminosity: 'dark',
       hue: 'green',
       format: 'rgba',
-      alpha: (Math.random() * 0.5 + 0.25)
+      alpha: (Math.random() * 0.5 + 0.65)
     });
     element.style.backgroundColor = hue;
 
 
     var symbol = document.createElement('div');
     symbol.className = 'symbol';
-    symbol.innerHTML = "<a href=" + resourceList[i + 1] + ">" + resourceList[i] + "</a>";
+    symbol.innerHTML = "<a href=" + resourceList[i + 1] + " target=\"_blank\">" + resourceList[i] + "</a><p>"
+    + resourceList[i+2]+ "<\p>";
     element.appendChild(symbol);
 
     var object = new THREE.CSS3DObject(element);
@@ -313,13 +295,19 @@ function init() {
   var mesObject = new THREE.CSS3DObject(message);
 
   //resources
+  var vector = new THREE.Vector3();
+  var cylindrical = new THREE.Cylindrical();
   for (var i = 0; i < resourceObj.length; i++) {
 
+    var theta = i *0.6  + Math.PI;
+    var y = - ( i * 40 ) + 400;
     var object = new THREE.Object3D();
-
-    object.position.x = ((i % 5) * 400) - 800;
-    object.position.y = (-(Math.floor(i / 5) % 5) * 400) + 800;
-    object.position.z = (Math.floor(i / 25)) * 1000 - 2000;
+    cylindrical.set( 900, theta, y );
+    object.position.setFromCylindrical( cylindrical );
+    vector.x = object.position.x * 2;
+    vector.y = object.position.y;
+    vector.z = object.position.z * 2;
+    object.lookAt( vector );
 
     targets.resources.push(object);
   }

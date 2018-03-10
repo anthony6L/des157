@@ -31,6 +31,16 @@ body {
   text-align: center;
 }
 
+#instructions h2{
+  text-indent: 10px;
+  line-height: 10px;
+}
+#instructions a{
+  font-size: 10pt;
+  text-shadow: none;
+  text-decoration: underline;
+}
+
 #blue, #red, #yellow {
   position: absolute;
   right: 10px;
@@ -43,30 +53,30 @@ body {
 }
 
 #blue {
-  bottom: 10px;
+  bottom: 150px;
   background-color: rgba(31, 113, 244, 0.45);
 }
 
 #red {
-  bottom: 150px;
+  bottom: 80px;
   background-color: rgba(226, 74, 87, 0.45);
 }
 
 #yellow {
-  bottom: 80px;
+  bottom: 10px;
   background-color: rgba(239, 186, 38, 0.45);
 }
 
 .element {
-  width: 200px;
-  height: 130px;
+  width: 225px;
+  height: 150px;
   box-shadow: 0px 0px 12px rgba(0, 255, 255, 0.5);
   border: 1px solid rgba(127, 255, 255, 0.25);
   text-align: center;
   cursor: default;
 }
 
-.element .symbol {
+.element .symbol{
   position: absolute;
   top: 50px;
   left: 0px;
@@ -104,6 +114,27 @@ a:hover {
   color: #ffffff;
   text-align: center;
   cursor: default;
+}
+
+.resource {
+  width: 500px;
+  height: 300px;
+  padding-top: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 12px rgba(0, 255, 255, 0.5);
+  border: 1px solid rgba(127, 255, 255, 0.25);
+  cursor: default;
+}
+.resource a{
+  font-size: 35px;
+  text-shadow: none;
+}
+.resource a:hover{
+  font-size: 40px;
+}
+.resource p{
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 button {

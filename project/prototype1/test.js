@@ -1,77 +1,138 @@
-var table = [
-  "Hydrogen", "studio3.html",
-  "Helium", "studio3.html",
-  "Lithium", "studio3.html",
-  "Beryllium", "studio3.html",
-  "Boron","studio3.html",
-  "Carbon","studio3.html",
-  "Nitrogen","studio3.html",
-  "Oxygen","studio3.html",
-  "Fluorine","studio3.html",
-  "Neon","studio3.html",
-  "Sodium","studio3.html",
-  "Magnesium","studio3.html",
-  "Aluminium","studio3.html",
-  "Silicon","studio3.html",
-  "Phosphorus","studio3.html",
-  "Sulfur","studio3.html",
-  "Chlorine","studio3.html",
-  "Argon","studio3.html",
-  "Potassium","studio3.html",
-  "Calcium","studio3.html",
-  "Scandium","studio3.html",
-  "Titanium","studio3.html",
-  "Vanadium","studio3.html",
-  "Chromium","studio3.html",
-  "Manganese","studio3.html"
+var sexuality = [
+  "Androsexual", "studio3.html",
+  "Aromantic", "studio3.html",
+  "Asexual", "studio3.html",
+  "Bicurious", "studio3.html",
+  "Bisexual", "studio3.html",
+  "Demiromantic", "studio3.html",
+  "Demisexual", "studio3.html",
+  "Gay", "studio3.html",
+  "Gynesexual", "studio3.html",
+  "Heterosexual", "studio3.html",
+  "Lesbian", "studio3.html",
+  "Metrosexual", "studio3.html",
+  "Queer", "studio3.html",
+  "Skoliosexual", "studio3.html",
+  "Straight", "studio3.html"
 ];
 
-var table2 = [
-  "Iron","studio3.html",
-  "Cobalt","studio3.html",
-  "Nickel","studio3.html",
-  "Copper","studio3.html",
-  "Zinc","studio3.html",
-  "Gallium","studio3.html",
-  "Germanium","studio3.html",
-  "Arsenic","studio3.html",
-  "Selenium","studio3.html",
-  "Bromine","studio3.html",
-  "Krypton","studio3.html",
-  "Rubidium","studio3.html",
-  "Strontium","studio3.html",
-  "Yttrium","studio3.html",
-  "Zirconium","studio3.html",
-  "Niobium","studio3.html",
-  "Molybdenum","studio3.html",
-  "Technetium","studio3.html",
-  "Ruthenium","studio3.html",
-  "Rhodium","studio3.html",
-  "Palladium","studio3.html",
-  "Silver","studio3.html",
-  "Cadmium","studio3.html",
-  "Indium","studio3.html",
-  "Tin","studio3.html",
-  "Antimony","studio3.html",
-  "Tellurium","studio3.html",
-  "Iodine","studio3.html",
-  "Xenon","studio3.html",
-  "Caesium","studio3.html",
-  "Barium","studio3.html",
-  "Lanthanum","studio3.html",
-  "Cerium","studio3.html"
-  ];
+var gender = [
+  "Iron", "studio3.html",
+  "Cobalt", "studio3.html",
+  "Nickel", "studio3.html",
+  "Copper", "studio3.html",
+  "Zinc", "studio3.html",
+  "Gallium", "studio3.html",
+  "Germanium", "studio3.html",
+  "Arsenic", "studio3.html",
+  "Selenium", "studio3.html",
+  "Bromine", "studio3.html",
+  "Krypton", "studio3.html",
+  "Rubidium", "studio3.html",
+  "Strontium", "studio3.html",
+  "Yttrium", "studio3.html",
+  "Zirconium", "studio3.html",
+  "Niobium", "studio3.html",
+  "Molybdenum", "studio3.html",
+  "Technetium", "studio3.html",
+  "Ruthenium", "studio3.html",
+  "Rhodium", "studio3.html",
+  "Palladium", "studio3.html",
+  "Silver", "studio3.html",
+  "Cadmium", "studio3.html",
+  "Indium", "studio3.html",
+  "Tin", "studio3.html",
+  "Antimony", "studio3.html",
+  "Tellurium", "studio3.html",
+  "Iodine", "studio3.html",
+  "Xenon", "studio3.html",
+  "Caesium", "studio3.html",
+  "Barium", "studio3.html",
+  "Lanthanum", "studio3.html",
+  "Cerium", "studio3.html"
+];
+
+var other = [
+  "Iron", "studio3.html",
+  "Cobalt", "studio3.html",
+  "Nickel", "studio3.html",
+  "Copper", "studio3.html",
+  "Zinc", "studio3.html",
+  "Gallium", "studio3.html",
+  "Germanium", "studio3.html",
+  "Arsenic", "studio3.html",
+  "Selenium", "studio3.html",
+  "Bromine", "studio3.html",
+  "Krypton", "studio3.html",
+  "Rubidium", "studio3.html",
+  "Strontium", "studio3.html",
+  "Yttrium", "studio3.html",
+  "Zirconium", "studio3.html",
+  "Niobium", "studio3.html",
+  "Molybdenum", "studio3.html",
+  "Technetium", "studio3.html",
+  "Ruthenium", "studio3.html",
+  "Rhodium", "studio3.html",
+  "Palladium", "studio3.html",
+  "Silver", "studio3.html",
+  "Cadmium", "studio3.html",
+  "Indium", "studio3.html",
+  "Tin", "studio3.html",
+  "Antimony", "studio3.html",
+  "Tellurium", "studio3.html",
+  "Iodine", "studio3.html",
+  "Xenon", "studio3.html",
+  "Caesium", "studio3.html",
+  "Barium", "studio3.html",
+  "Lanthanum", "studio3.html",
+  "Cerium", "studio3.html"
+]
+
+var resourceList = [
+  "Iron", "studio3.html",
+  "Cobalt", "studio3.html",
+  "Nickel", "studio3.html",
+  "Copper", "studio3.html",
+  "Zinc", "studio3.html",
+  "Gallium", "studio3.html",
+  "Germanium", "studio3.html",
+  "Arsenic", "studio3.html",
+  "Selenium", "studio3.html",
+  "Bromine", "studio3.html",
+  "Krypton", "studio3.html",
+  "Rubidium", "studio3.html",
+  "Strontium", "studio3.html",
+  "Yttrium", "studio3.html",
+  "Zirconium", "studio3.html",
+  "Niobium", "studio3.html",
+  "Molybdenum", "studio3.html",
+  "Technetium", "studio3.html",
+  "Ruthenium", "studio3.html",
+  "Rhodium", "studio3.html",
+  "Palladium", "studio3.html",
+  "Silver", "studio3.html",
+  "Cadmium", "studio3.html",
+  "Indium", "studio3.html",
+  "Tin", "studio3.html",
+  "Antimony", "studio3.html",
+  "Tellurium", "studio3.html",
+  "Iodine", "studio3.html",
+  "Xenon", "studio3.html",
+  "Caesium", "studio3.html",
+  "Barium", "studio3.html",
+  "Lanthanum", "studio3.html",
+  "Cerium", "studio3.html"
+];
 
 var camera, scene, renderer;
 var controls;
 
 var objects = [];
-var detailObj = [];
 var resourceObj = [];
 var targets = {
   sphere: [],
-  helix: [],
-  grid: []
+  messagePage: [],
+  resources: []
 };
 
 init();
@@ -86,7 +147,7 @@ function init() {
 
   // construct labels
 
-  for (var i = 0; i < table.length; i+=2) {
+  for (var i = 0; i < sexuality.length; i += 2) {
 
     var element = document.createElement('div');
     element.className = 'element';
@@ -101,8 +162,7 @@ function init() {
 
     var symbol = document.createElement('div');
     symbol.className = 'symbol';
-    symbol.innerHTML = "<a href=" + table[i+1]+">" + table[i] +"</a>";
-    
+    symbol.innerHTML = "<a href=" + sexuality[i + 1] + ">" + sexuality[i] + "</a>";
     element.appendChild(symbol);
 
     var object = new THREE.CSS3DObject(element);
@@ -115,7 +175,7 @@ function init() {
 
   }
 
-  for (var i = 0; i < table2.length; i+=2) {
+  for (var i = 0; i < gender.length; i += 2) {
 
     var element = document.createElement('div');
     element.className = 'element';
@@ -130,8 +190,7 @@ function init() {
 
     var symbol = document.createElement('div');
     symbol.className = 'symbol';
-    symbol.innerHTML = "<a href=" + table[i+1]+">" + table[i] +"</a>";
-    
+    symbol.innerHTML = "<a href=" + gender[i + 1] + ">" + gender[i] + "</a>";
     element.appendChild(symbol);
 
     var object = new THREE.CSS3DObject(element);
@@ -143,6 +202,63 @@ function init() {
     objects.push(object);
 
   }
+
+  for (var i = 0; i < other.length; i += 2) {
+
+    var element = document.createElement('div');
+    element.className = 'element';
+    var hue = randomColor({
+      luminosity: 'bright',
+      hue: 'yellow',
+      format: 'rgba',
+      alpha: (Math.random() * 0.5 + 0.25)
+    });
+    element.style.backgroundColor = hue;
+
+
+    var symbol = document.createElement('div');
+    symbol.className = 'symbol';
+    symbol.innerHTML = "<a href=" + other[i + 1] + ">" + other[i] + "</a>";
+    element.appendChild(symbol);
+
+    var object = new THREE.CSS3DObject(element);
+    object.position.x = Math.random() * 4000 - 2000;
+    object.position.y = Math.random() * 4000 - 2000;
+    object.position.z = Math.random() * 4000 - 2000;
+    scene.add(object);
+
+    objects.push(object);
+
+  }
+
+  for (var i = 0; i < resourceList.length; i += 2) {
+
+    var element = document.createElement('div');
+    element.className = 'element';
+    var hue = randomColor({
+      luminosity: 'bright',
+      hue: 'green',
+      format: 'rgba',
+      alpha: (Math.random() * 0.5 + 0.25)
+    });
+    element.style.backgroundColor = hue;
+
+
+    var symbol = document.createElement('div');
+    symbol.className = 'symbol';
+    symbol.innerHTML = "<a href=" + resourceList[i + 1] + ">" + resourceList[i] + "</a>";
+    element.appendChild(symbol);
+
+    var object = new THREE.CSS3DObject(element);
+    object.position.x = Math.random() * 4000 - 2000;
+    object.position.y = Math.random() * 4000 - 2000;
+    object.position.z = Math.random() * 4000 - 2000;
+    scene.add(object);
+
+    resourceObj.push(object);
+
+  }
+
 
   // sphere
 
@@ -168,7 +284,7 @@ function init() {
 
   }
 
-  // helix
+  // messagePage
 
   var vector = new THREE.Vector3();
 
@@ -186,17 +302,17 @@ function init() {
 
     object.lookAt(vector);
 
-    targets.helix.push(object);
+    targets.messagePage.push(object);
 
   }
   var message = document.createElement('div');
   message.id = 'message';
-  message.style.backgroundColor = 'rgba(255,255,255,0.25)';
-  message.textContent = "this is studio3";
+  message.style.backgroundColor = 'rgba(255,255,255,0.40)';
+  message.textContent = "You are more than the labels";
 
   var mesObject = new THREE.CSS3DObject(message);
 
-//grid
+  //resources
   for (var i = 0; i < resourceObj.length; i++) {
 
     var object = new THREE.Object3D();
@@ -205,12 +321,10 @@ function init() {
     object.position.y = (-(Math.floor(i / 5) % 5) * 400) + 800;
     object.position.z = (Math.floor(i / 25)) * 1000 - 2000;
 
-    targets.grid.push(object);
-
+    targets.resources.push(object);
   }
 
   //
-
   renderer = new THREE.CSS3DRenderer();
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.domElement.style.position = 'absolute';
@@ -224,6 +338,59 @@ function init() {
   controls.maxDistance = 6000;
   controls.addEventListener('change', render);
 
+  var instr = document.getElementById('instructions');
+  //filter buttons
+  var filter = document.getElementById('filter');
+  var sex = document.getElementById('red');
+  var gen = document.getElementById('blue');
+  var terms = document.getElementById('yellow');
+
+  sex.addEventListener('click', function(event) {
+    for (var i = objects.length - 1; i >= sexuality.length / 2; i--) {
+      scene.remove(objects[i]);
+    }
+  }, false);
+
+  gen.addEventListener('click', function(event) {
+    for (var i = 0; i < sexuality.length / 2; i++) {
+      scene.remove(objects[i]);
+    }
+
+    for (var i = objects.length - 1; i > sexuality.length / 2 + gender.length / 2 - 2; i--) {
+      scene.remove(objects[i]);
+    }
+  }, false);
+
+  terms.addEventListener('click', function(event) {
+    for (var i = 0; i < objects.length - other.length / 2; i++) {
+      scene.remove(objects[i]);
+    }
+  }, false);
+
+  //instruction button
+  var button = document.getElementById('instruction');
+  button.addEventListener('click', function(event) {
+    for (var i = 0; i < resourceObj.length; i++) {
+      scene.remove(resourceObj[i]);
+    }
+    scene.remove(mesObject);
+    for (var i = 0; i < objects.length; i++) {
+      scene.remove(objects[i]);
+    }
+    controls.reset();
+
+    if (instr.classList.contains("hide")) {
+      instr.classList.remove("hide");
+      instr.classList.add("show");
+    }
+    if (filter.classList.contains("show")) {
+      filter.classList.remove("show");
+      filter.classList.add("hide");
+    }
+
+  }, false);
+
+  //labels button
   var button = document.getElementById('sphere');
   button.addEventListener('click', function(event) {
 
@@ -235,25 +402,45 @@ function init() {
     for (var i = 0; i < resourceObj.length; i++) {
       scene.remove(resourceObj[i]);
     }
+    controls.reset();
 
+    if (instr.classList.contains("show")) {
+      instr.classList.remove("show");
+      instr.classList.add("hide");
+    }
+    if (filter.classList.contains("hide")) {
+      filter.classList.remove("hide");
+      filter.classList.add("show");
+    }
   }, false);
 
-  var button = document.getElementById('helix');
+  //message button
+  var button = document.getElementById('messagePage');
   button.addEventListener('click', function(event) {
-
     for (var i = 0; i < objects.length; i++) {
       scene.add(objects[i]);
     }
-    transform(targets.helix, 2000, objects);
+    transform(targets.messagePage, 2000, objects);
     mesObject.position.z = 1000;
     scene.add(mesObject);
     for (var i = 0; i < resourceObj.length; i++) {
       scene.remove(resourceObj[i]);
     }
+    controls.reset();
 
+    if (instr.classList.contains("show")) {
+      instr.classList.remove("show");
+      instr.classList.add("hide");
+    }
+
+    if (filter.classList.contains("hide")) {
+      filter.classList.remove("hide");
+      filter.classList.add("show");
+    }
   }, false);
 
-  var button = document.getElementById('grid');
+  //resource button
+  var button = document.getElementById('resources');
   button.addEventListener('click', function(event) {
     for (var i = 0; i < resourceObj.length; i++) {
       scene.add(resourceObj[i]);
@@ -262,13 +449,21 @@ function init() {
     for (var i = 0; i < objects.length; i++) {
       scene.remove(objects[i]);
     }
+    controls.reset();
 
-    transform(targets.grid, 2000, resourceObj);
+    if (instr.classList.contains("show")) {
+      instr.classList.remove("show");
+      instr.classList.add("hide");
+    }
+
+    if (filter.classList.contains("show")) {
+      filter.classList.remove("show");
+      filter.classList.add("hide");
+    }
+
+    transform(targets.resources, 2000, resourceObj);
 
   }, false);
-
-
-  transform(targets.sphere, 2000, objects);
 
 
   //
@@ -283,7 +478,7 @@ function transform(targets, duration, obj) {
 
   for (var i = 0; i < obj.length; i++) {
 
-    var object = objects[i];
+    var object = obj[i];
     var target = targets[i];
 
     new TWEEN.Tween(object.position)
