@@ -1,4 +1,6 @@
-var sexuality = [
+"use strict";
+
+var sexuality = [//list of name & link for sexualities
   "Androsexual", "labels/sex/androsexual.html",
   "Aromantic", "labels/sex/aromantic.html",
   "Asexual", "labels/sex/asexual.html",
@@ -24,7 +26,7 @@ var sexuality = [
   "Straight", "labels/sex/straight.html"
 ];
 
-var gender = [
+var gender = [//list of name & link for genders
   "Agender", "labels/gen/agender.html",
   "Androgyny/ous", "labels/gen/androgyny.html",
   "Bigender", "labels/gen/bigender.html",
@@ -61,7 +63,7 @@ var gender = [
   "Ze/Zir", "labels/gen/ze.html"
 ];
 
-var other = [
+var other = [//list of name & link for other labels
   "Advocate", "labels/other/advocate.html",
   "Ally", "labels/other/ally.html",
   "Biphobia", "labels/other/biphobia.html",
@@ -85,7 +87,7 @@ var other = [
   "Transphobia", "labels/other/transphobia.html"
 ];
 
-var resourceList = [
+var resourceList = [//list of name, link & description for resources
   "Atticus Circle", "https://www.atticuscircle.org/","Dedicated to educating and mobilizing straight allies to advance equal rights for lesbians, gay, bisexual and transgender partners, parents and their children.",
   "Trans Family", "http://transfamily.org/", "TransFamily provides support, education, advocacy, and outreach for the transgendered community, families, friends, partners, and allies of all ages, through meetings, presentations, seminars, media outreach, and an emergency resource hotline.",
   "GLBTNearMe", "https://glbtnearme.org/", "Find local social and support resources within the LGBT community.",
@@ -105,22 +107,26 @@ var resourceList = [
   "The Human Rights Campaign", "http://www.hrc.org/", "The leading LGBT civil rights organization, with information about LGBT people/issues and ways to get involved in the fight for equality.",
 ];
 
+//globel vars for the library
 var camera, scene, renderer;
 var controls;
 
+//lists for adding objects to the scene
 var objects = [];
 var resourceObj = [];
-var targets = {
+var targets = {//different shapes for different pages
   sphere: [],
   messagePage: [],
   resources: []
 };
 
+//function calss
 init();
 animate();
 
 function init() {
 
+  //set camera and scene
   camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 1, 10000);
   camera.position.z = 3000;
 
@@ -128,9 +134,9 @@ function init() {
 
   // construct labels
 
-  for (var i = 0; i < sexuality.length; i += 2) {
-
-    var element = document.createElement('div');
+  for (var i = 0; i < sexuality.length; i += 2) {//sexuality labels
+    //create a label
+    var element = document.createElement('div'); 
     element.className = 'element';
     var hue = randomColor({
       luminosity: 'bright',
@@ -140,12 +146,13 @@ function init() {
     });
     element.style.backgroundColor = hue;
 
-
+    //adding content to the label
     var symbol = document.createElement('div');
     symbol.className = 'symbol';
     symbol.innerHTML = "<a href=" + sexuality[i + 1] + " target=\"_blank\">" + sexuality[i] + "</a>";
     element.appendChild(symbol);
 
+    //position element at random places in the scene
     var object = new THREE.CSS3DObject(element);
     object.position.x = Math.random() * 4000 - 2000;
     object.position.y = Math.random() * 4000 - 2000;
@@ -156,7 +163,7 @@ function init() {
 
   }
 
-  for (var i = 0; i < gender.length; i += 2) {
+  for (var i = 0; i < gender.length; i += 2) {//gender labels
 
     var element = document.createElement('div');
     element.className = 'element';
@@ -184,7 +191,7 @@ function init() {
 
   }
 
-  for (var i = 0; i < other.length; i += 2) {
+  for (var i = 0; i < other.length; i += 2) {//other labels
 
     var element = document.createElement('div');
     element.className = 'element';
@@ -212,7 +219,7 @@ function init() {
 
   }
 
-  for (var i = 0; i < resourceList.length; i += 3) {
+  for (var i = 0; i < resourceList.length; i += 3) {//resources labels
 
     var element = document.createElement('div');
     element.className = 'resource';
@@ -287,6 +294,7 @@ function init() {
     targets.messagePage.push(object);
 
   }
+  //creating the special meesage object
   var message = document.createElement('div');
   message.id = 'message';
   message.style.backgroundColor = 'rgba(255,255,255,0.40)';
@@ -312,14 +320,13 @@ function init() {
     targets.resources.push(object);
   }
 
-  //
+  //render the scene
   renderer = new THREE.CSS3DRenderer();
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.domElement.style.position = 'absolute';
   document.getElementById('container').appendChild(renderer.domElement);
 
-  //
-
+  //set the controls for interaction
   controls = new THREE.TrackballControls(camera, renderer.domElement);
   controls.rotateSpeed = 0.65;
   controls.minDistance = 500;
@@ -332,7 +339,6 @@ function init() {
   var sex = document.getElementById('red');
   var gen = document.getElementById('blue');
   var terms = document.getElementById('yellow');
-
   sex.addEventListener('click', function(event) {
     for (var i = objects.length - 1; i >= sexuality.length / 2; i--) {
       scene.remove(objects[i]);
@@ -358,20 +364,20 @@ function init() {
   //instruction button
   var button = document.getElementById('instruction');
   button.addEventListener('click', function(event) {
-    for (var i = 0; i < resourceObj.length; i++) {
+    for (var i = 0; i < resourceObj.length; i++) {//remove all resource objects
       scene.remove(resourceObj[i]);
     }
-    scene.remove(mesObject);
-    for (var i = 0; i < objects.length; i++) {
+    scene.remove(mesObject);//remove message
+    for (var i = 0; i < objects.length; i++) {//remove all label objects
       scene.remove(objects[i]);
     }
-    controls.reset();
+    controls.reset();//reset the orientation of the scene
 
-    if (instr.classList.contains("hide")) {
+    if (instr.classList.contains("hide")) {//show instruction box
       instr.classList.remove("hide");
       instr.classList.add("show");
     }
-    if (filter.classList.contains("show")) {
+    if (filter.classList.contains("show")) {//hide label filter
       filter.classList.remove("show");
       filter.classList.add("hide");
     }
@@ -382,21 +388,21 @@ function init() {
   var button = document.getElementById('sphere');
   button.addEventListener('click', function(event) {
 
-    for (var i = 0; i < objects.length; i++) {
+    for (var i = 0; i < objects.length; i++) {//add all label objects to the scene
       scene.add(objects[i]);
     }
-    transform(targets.sphere, 2000, objects);
-    scene.remove(mesObject);
+    transform(targets.sphere, 2000, objects);//apply the animation
+    scene.remove(mesObject);//remove message
     for (var i = 0; i < resourceObj.length; i++) {
-      scene.remove(resourceObj[i]);
+      scene.remove(resourceObj[i]);//remove all resource objects to the scene
     }
     controls.reset();
 
-    if (instr.classList.contains("show")) {
+    if (instr.classList.contains("show")) {//hide instruction box
       instr.classList.remove("show");
       instr.classList.add("hide");
     }
-    if (filter.classList.contains("hide")) {
+    if (filter.classList.contains("hide")) {//show label filter
       filter.classList.remove("hide");
       filter.classList.add("show");
     }
@@ -409,19 +415,19 @@ function init() {
       scene.add(objects[i]);
     }
     transform(targets.messagePage, 2000, objects);
-    mesObject.position.z = 1000;
-    scene.add(mesObject);
+    mesObject.position.z = 1000;//positon message
+    scene.add(mesObject);//add message to scene
     for (var i = 0; i < resourceObj.length; i++) {
       scene.remove(resourceObj[i]);
     }
     controls.reset();
 
-    if (instr.classList.contains("show")) {
+    if (instr.classList.contains("show")) {//hide instruction box
       instr.classList.remove("show");
       instr.classList.add("hide");
     }
 
-    if (filter.classList.contains("hide")) {
+    if (filter.classList.contains("hide")) {//show label filter
       filter.classList.remove("hide");
       filter.classList.add("show");
     }
@@ -439,38 +445,38 @@ function init() {
     }
     controls.reset();
 
-    if (instr.classList.contains("show")) {
+    if (instr.classList.contains("show")) {//hide instruction box
       instr.classList.remove("show");
       instr.classList.add("hide");
     }
 
-    if (filter.classList.contains("show")) {
+    if (filter.classList.contains("show")) {//hide label filter
       filter.classList.remove("show");
       filter.classList.add("hide");
     }
 
-    transform(targets.resources, 2000, resourceObj);
+    transform(targets.resources, 2000, resourceObj);//apply animation
 
   }, false);
 
 
   //
 
-  window.addEventListener('resize', onWindowResize, false);
+  window.addEventListener('resize', onWindowResize, false);//change camera position after resizing
 
 }
 
-function transform(targets, duration, obj) {
+function transform(targets, duration, obj) {//animation function
 
-  TWEEN.removeAll();
+  TWEEN.removeAll();//remove all current animation
 
-  for (var i = 0; i < obj.length; i++) {
+  for (var i = 0; i < obj.length; i++) {//
 
-    var object = obj[i];
-    var target = targets[i];
+    var object = obj[i];//get the object from object array
+    var target = targets[i];//get the postion from shape array
 
-    new TWEEN.Tween(object.position)
-      .to({
+    new TWEEN.Tween(object.position)//create new animation
+      .to({//position animation
         x: target.position.x,
         y: target.position.y,
         z: target.position.z
@@ -479,7 +485,7 @@ function transform(targets, duration, obj) {
       .start();
 
     new TWEEN.Tween(object.rotation)
-      .to({
+      .to({//rotation animation
         x: target.rotation.x,
         y: target.rotation.y,
         z: target.rotation.z
@@ -489,25 +495,25 @@ function transform(targets, duration, obj) {
 
   }
 
-  new TWEEN.Tween(this)
+  new TWEEN.Tween(this)//render the animation
     .to({}, duration * 2)
     .onUpdate(render)
     .start();
 
 }
 
-function onWindowResize() {
+function onWindowResize() {//window resize funtion
 
-  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.aspect = window.innerWidth / window.innerHeight;//reset camera
   camera.updateProjectionMatrix();
 
-  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setSize(window.innerWidth, window.innerHeight);//reset renderer
 
   render();
 
 }
 
-function animate() {
+function animate() {//do the animation
 
   requestAnimationFrame(animate);
 
@@ -517,7 +523,7 @@ function animate() {
 
 }
 
-function render() {
+function render() {//calls renderer to render
 
   renderer.render(scene, camera);
 
