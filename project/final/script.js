@@ -106,6 +106,25 @@ var resourceList = [//list of name, link & description for resources
   "Psychology Today", "https://www.psychologytoday.com/", "Trustworthy resource to find therapist and psychiatrist",
   "The Human Rights Campaign", "http://www.hrc.org/", "The leading LGBT civil rights organization, with information about LGBT people/issues and ways to get involved in the fight for equality.",
 ];
+/*var resourceList = [//list of name, link & description for resources
+  "Atticus Circle", "#/","Dedicated to educating and mobilizing straight allies to advance equal rights for lesbians, gay, bisexual and transgender partners, parents and their children.",
+  "Trans Family", "#", "TransFamily provides support, education, advocacy, and outreach for the transgendered community, families, friends, partners, and allies of all ages, through meetings, presentations, seminars, media outreach, and an emergency resource hotline.",
+  "GLBTNearMe", "#", "Find local social and support resources within the LGBT community.",
+  "Trevor Project", "#", "Leading national organization focused on crisis and suicide prevention efforts for LGBTQ youth. They operate a 24 hour nationwide hotline to provide assistance.",
+  "The Ali Forney Center", "#", "Providing shelter, food, and resources for at risk or homeless LGBT youth.",
+  "GLBT National Help Center", "#", "Provides free and confidential telephone and internet counseling, information and local resources for LGBTQ callers.",
+  "National Youth Advocacy Coalition", "#", "A national organization seeking to strenghten the role of LGBTQ youth in the broader gay rights movement.",
+  "LGBT Campus", "#", "Provides resources to lesbian, gay, bisexual, and transgender students, faculty, staff, administrators, and alumni.",
+  "GSA Network", "#", "Gay-Straight Alliance Network is a youth leadership organization that connects school-based Gay-Straight Alliances (GSAs) to each other and community resources through peer support, leadership development, and training.",
+  "Campus Pride", "#", "The only national organization working to empower LGBT college students and organizers.",
+  "Campus Climate Index", "#", "An index ranking LGBT life on various college campuses.",
+  "NCAVP", "#", "A national coalition of local member programs working to prevent, respond to, and end all forms of violence against and within LGBTQ communities.",
+  "GLSEN", "#", "Lesson plans, curricular tools, and information on teacher training programs.",
+  "Safe Schools Coalition", "#", "An international public-private partnership in support of gay, lesbian, bisexual and transgender youth, working to help schools become safe places where every family can belong, every educator can teach, and every child can learn, regardless of gender identity or sexual orientation.",
+  "Beyound Ex-Gay", "#", "Community of survivors of “ex-gay” conversion therapy.",
+  "Psychology Today", "#", "Trustworthy resource to find therapist and psychiatrist",
+  "The Human Rights Campaign", "#", "The leading LGBT civil rights organization, with information about LGBT people/issues and ways to get involved in the fight for equality.",
+];*/
 
 //globel vars for the library
 var camera, scene, renderer;
