@@ -45,7 +45,7 @@ var gender = [//list of name & link for genders
   "Intersex", "labels/gen/intersex.html",
   "MtF/M2F", "labels/gen/mtf.html",
   "Mx", "labels/gen/mx.html",
-  "Passing", "labels/passing.html",
+  "Passing", "labels/gen/passing.html",
   "PGP", "labels/gen/pgp.html",
   "SAAB", "labels/gen/saab.html",
   "SRS", "labels/gen/srs.html",
@@ -359,22 +359,37 @@ function init() {
   var gen = document.getElementById('blue');
   var terms = document.getElementById('yellow');
   sex.addEventListener('click', function(event) {
+    for (var i = 0; i < objects.length; i++) {//add all label objects to the scene
+      scene.add(objects[i]);
+    }
+    controls.reset();
+
     for (var i = objects.length - 1; i >= sexuality.length / 2; i--) {
       scene.remove(objects[i]);
     }
   }, false);
 
   gen.addEventListener('click', function(event) {
+    for (var i = 0; i < objects.length; i++) {//add all label objects to the scene
+      scene.add(objects[i]);
+    }
+    controls.reset();
+
     for (var i = 0; i < sexuality.length / 2; i++) {
       scene.remove(objects[i]);
     }
 
-    for (var i = objects.length - 1; i > sexuality.length / 2 + gender.length / 2 - 2; i--) {
+    for (var i = objects.length - 1; i > sexuality.length / 2 + gender.length / 2 - 1; i--) {
       scene.remove(objects[i]);
     }
   }, false);
 
   terms.addEventListener('click', function(event) {
+    for (var i = 0; i < objects.length; i++) {//add all label objects to the scene
+      scene.add(objects[i]);
+    }
+    controls.reset();
+    
     for (var i = 0; i < objects.length - other.length / 2; i++) {
       scene.remove(objects[i]);
     }
@@ -446,9 +461,9 @@ function init() {
       instr.classList.add("hide");
     }
 
-    if (filter.classList.contains("hide")) {//show label filter
-      filter.classList.remove("hide");
-      filter.classList.add("show");
+    if (filter.classList.contains("show")) {//hide label filter
+      filter.classList.remove("show");
+      filter.classList.add("hide");
     }
   }, false);
 
